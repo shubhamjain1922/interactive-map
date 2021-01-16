@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>web_sites</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			margin: 0;
+		}
+		.wrapper {
+			position: relative;
+			height: 800px;
+			float: left;
+		}
+		img {
+			position: absolute;
+		}
+
+		.cover {
+			height: 750px;
+			transition: 0.3s;
+		}
+
+		.acad {
+			height: 152px;
+			top: 319px;
+			left: 355px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.audi {
+			top: 506px;
+			left: 432px;
+			height: 47px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.mp {
+			height: 30px;
+			top: 607px;
+			left: 159px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+		.shop {
+			height: 37px;
+			top: 290px;
+			left: 95px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.cant {
+			height: 25px;
+			top: 368px;
+			left: 312px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.fac1 {
+			height: 39px;
+			top: 88px;
+			left: 318px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.fac2 {
+			height: 39px;
+			top: 97px;
+			left: 353px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.fac3 {
+			height: 39px;
+			top: 138px;
+			left: 343px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.fac4 {
+			height: 40px;
+			top: 161px;
+			left: 212px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.fac5 {
+			height: 40px;
+			top: 171px;
+			left: 246px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.oat {
+			height: 37px;
+			top: 303px;
+			left: 310px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.staff {
+			height:50px;
+			top: 653px;
+			left: 399px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.guest {
+			height:46px;
+			top: 181px;
+			left: 314px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.girl1 {
+			height:68px;
+			top: 280px;
+			left: 160px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.girl2 {
+			height:45px;
+			top: 315px;
+			left: 206px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.girl3 {
+			height:50px;
+			top: 362px;
+			left: 198px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.girl4 {
+			height:50px;
+			top: 343px;
+			left: 137px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.girl5 {
+			height:60px;
+			top: 339px;
+			left: 86px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.girl6 {
+			height:55px;
+			top: 233px;
+			left: 176px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.boy1 {
+			height:65px;
+			top: 465px;
+			left: 127px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.boy2 {
+			height:59px;
+			top: 526px;
+			left: 132px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.boy3 {
+			height:81px;
+			top: 520px;
+			left: 69px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.boy4 {
+			height:65px;
+			top: 433px;
+			left: 46px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.park1 {
+			top: 404px;
+			left: 479px;
+			height: 106px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.park2 {
+			top: 562px;
+			left: 437px;
+			height: 107px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.lawnt1 {
+			height:44px;
+			top: 557px;
+			left: 235px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.lawnt2 {
+			height:44px;
+			top: 75px;
+			left: 269px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.lawnt3 {
+			height:44px;
+			top: 121px;
+			left: 258px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.volley {
+			height:43px;
+			top: 576px;
+			left: 257px;
+			opacity: 0;
+		}
+
+		.basket {
+			height:37px;
+			top: 615px;
+			left: 253px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.field {
+			height:200px;
+			top: 475px;
+			left: 275px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.sub {
+			height:17px;
+			top: 230px;
+			left: 395px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.stp {
+			height:14px;
+			top: 474px;
+			left: 14px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.mlpark {
+			height:42px;
+			top: 73px;
+			left: 244px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.guard {
+			height:25px;
+			top: 320px;
+			left: 605px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.ugt {
+			height:35px;
+			top: 165px;
+			left: 181px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.pond {
+			height:132px;
+			top: 407px;
+			left: 216px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.compass {
+			top: 20px;
+			left: 20px;
+			height: 100px;
+		}
+
+		.buttons {
+			float: left;
+			margin-left: 45vw;
+			text-align: center;
+			align-items: center;
+			background: linear-gradient(to bottom,  rgba(169,228,247,1) 0%,rgba(15,180,231,1) 100%);
+		}
+
+		button {
+			font-size: 1.1em;
+			padding: 8px 25px;
+			border-radius: 50px;
+			border:1px solid black;
+			background-color: black;
+			color: white;
+			/*display: block;*/
+			width: 40%;
+			margin: 8px;
+			outline: none;
+		}
+
+		.selected {
+			transition: 0.3s;
+			background-color: white;
+			color: black;
+		}
+
+		.heading {
+			margin: 10px;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="wrapper">
+		<img class="cover" src="img/cover.png">
+		<img class="acad 1_svg hover" src="svg/1.svg">
+		<img class="audi 2_svg hover" src="svg/2.svg">
+		<img class="mp 3_svg hover" src="svg/3.svg">
+		<img class="shop 4_svg hover" src="svg/4.svg">
+		<img class="cant 5_svg hover" src="svg/5.svg">
+		<img class="fac1 6_svg hover" src="svg/6_1.svg">
+		<img class="fac2 6_svg hover" src="svg/6_1.svg">
+		<img class="fac3 6_svg hover" src="svg/6_2.svg">
+		<img class="fac4 6_svg hover" src="svg/6r.svg">
+		<img class="fac5 6_svg hover" src="svg/6r.svg">
+		<img class="oat 7_svg hover" src="svg/7.svg">
+		<img class="staff 8_svg hover" src="svg/8.svg">
+		<img class="guest 9_svg hover" src="svg/9.svg">
+		<img class="girl1 10_svg hover" src="svg/10_1.svg">
+		<img class="girl2 10_svg hover" src="svg/10_2.svg">
+		<img class="girl3 10_svg hover" src="svg/10_3.svg">
+		<img class="girl4 10_svg hover" src="svg/10_4.svg">
+		<img class="girl5 10_svg hover" src="svg/10_5.svg">
+		<img class="girl6 10_svg hover" src="svg/10r.svg">
+		<img class="boy1 11_svg hover" src="svg/11_1.svg">
+		<img class="boy2 11_svg hover" src="svg/11_2.svg">
+		<img class="boy3 11_svg hover" src="svg/11_3.svg">
+		<img class="boy4 11_svg hover" src="svg/11r.svg">
+		<img class="park1 12_svg hover" src="svg/12_1.svg">
+		<img class="park2 12_svg hover" src="svg/12_2.svg">
+		<img class="lawnt1 13_svg hover" src="svg/13.svg">
+		<img class="lawnt2 13_svg hover" src="svg/13.svg">
+		<img class="lawnt3 13_svg hover" src="svg/13.svg">
+		<img class="volley 14_svg hover" src="svg/14.svg">
+		<img class="basket 15_svg hover" src="svg/15.svg">
+		<img class="field 16_svg hover" src="svg/16.svg">
+		<img class="sub 17_svg hover" src="svg/17.svg">
+		<!-- <img class="bound 18_svg hover" src="svg/18.svg"> -->
+		<img class="stp 19_svg hover" src="svg/19.svg">
+		<img class="mlpark 20_svg hover" src="svg/20.svg">
+		<img class="guard 21_svg hover" src="svg/21.svg">
+		<img class="ugt 22_svg hover" src="svg/22.svg">
+		<img class="pond 23_svg hover" src="svg/23.svg">
+		<img class="compass" src="img/compass.png">
+	</div>
+	<div class="buttons">
+		<h1 class="heading">IIITG Campus</h1>
+		<button class="1_but">1. Acadmic block</button>
+		<button class="2_but">2. Auditorium</button>
+		<button class="3_but">3. Multi Purpose Hall</button>
+		<button class="4_but">4. Shopping Complex</button>
+		<button class="5_but">5. Canteen</button>
+		<button class="6_but">6. Faculty Residence</button>
+		<button class="7_but">7. O.A.T</button>
+		<button class="8_but">8. Staff Quarter</button>
+		<button class="9_but">9. Guest House</button>
+		<button class="10_but">10. Girl's Hostel</button>
+		<button class="11_but">11. Boy's Hostel</button>
+		<button class="12_but">12. Parking</button>
+		<button class="13_but">13. Lawn Tennis Court</button>
+		<button class="14_but">14. Volleyball court</button>
+		<button class="15_but">15. Basketball court</button>
+		<button class="16_but">16. 400m Track</button>
+		<button class="17_but">17. Sub Station</button>
+		<button class="18_but">18. Catchments</button>
+		<button class="19_but">19. S.T.P</button>
+		<button class="20_but">20. Multilevel Parking</button>
+		<button class="21_but">21. Guard Room</button>
+		<button class="22_but">22. O.H.T</button>
+		<button class="23_but">23. Pond</button>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script>
+
+		function highlight (selector){
+			$(selector).mouseenter(function(){
+				var classLink = $(this).attr('class').split(' ')[1];
+				classLink=classLink.split("_")[0];
+				$("." + classLink+"_svg").css("opacity","1");
+				$(".cover").css("opacity","0.5");
+				$("." + classLink+"_but").addClass("selected");
+			}).mouseleave(function(){
+				var classLink = $(this).attr('class').split(' ')[1];
+				classLink=classLink.split("_")[0];
+				$("." + classLink+"_svg").css("opacity","0");
+				$(".cover").css("opacity","1");
+				$("." + classLink+"_but").removeClass("selected");
+			});
+		};
+
+		function highlight2 (selector){
+			$(selector).mouseenter(function(){
+				var classLink = $(this).attr('class');
+				classLink=classLink.split("_")[0];
+				$("." + classLink+"_svg").css("opacity","1");
+				$(".cover").css("opacity","0.5");
+				$("." + classLink+"_but").addClass("selected");
+			}).mouseleave(function(){
+				var classLink = $(this).attr('class');
+				classLink=classLink.split("_")[0];
+				$("." + classLink+"_svg").css("opacity","0");
+				$(".cover").css("opacity","1");
+				$("." + classLink+"_but").removeClass("selected");
+			});
+		};
+
+		highlight(".hover");
+		highlight2("button");
+
+	</script>
+</body>
+</html>
